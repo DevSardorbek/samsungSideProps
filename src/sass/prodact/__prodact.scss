@@ -1,0 +1,115 @@
+.prodact__section {
+  .prodact__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 32px;
+    .prodact__title-links {
+      display: flex;
+      align-items: center;
+      gap: 48px;
+      margin-bottom: 24px;
+      h1 {
+        font-size: 38px;
+      }
+      p {
+        font-size: 18px;
+        font-weight: bold;
+        transition: 0.2s;
+        cursor: pointer;
+        padding: 0 0 4px 0;
+        &:nth-child(1) {
+          border-bottom: 2px solid black;
+        }
+        &:hover {
+          color: #504e4e;
+        }
+      }
+    }
+  }
+  .prodact__cards {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    .prodact__card {
+      background-color: #f4f4f4;
+      border-radius: 24px;
+      position: relative;
+      width: 445px;
+      transition: 0.3s;
+      &:hover {
+        .card_img {
+          img {
+            transform: scale(1.1);
+          }
+        }
+        .card_info {
+          button {
+            bottom: 55px;
+            opacity: 1;
+          }
+          h4 {
+            opacity: 0;
+          }
+          p {
+            opacity: 0;
+          }
+        }
+      }
+
+      .card_img {
+        position: relative;
+        padding: 24px 0;
+        display: flex;
+        justify-content: center;
+        img {
+          transition: 0.3s;
+        }
+        span {
+          position: absolute;
+          top: 30px;
+          left: 30px;
+          color: #f4f4f4;
+          background-color: #007aff;
+          border-radius: 12px;
+          padding: 4px;
+          z-index: 3;
+        }
+      }
+      .card_info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 53px;
+        h3 {
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          margin-bottom: 18px;
+          font-size: 18px;
+        }
+        h4 {
+          margin-bottom: 12px;
+          font-size: 15px;
+          color: #2189ff;
+        }
+        p {
+          font-size: 14px;
+        }
+        button {
+          position: absolute;
+          color: #fff;
+          background-color: black;
+          padding: 12px 24px;
+          border-radius: 24px;
+          bottom: 0;
+          transition: 0.2s;
+          opacity: 0;
+        }
+      }
+    }
+  }
+}

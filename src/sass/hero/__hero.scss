@@ -1,0 +1,29 @@
+.hero__section {
+  .hero__wrapper {
+    background-image: url("../../assets/images/hero.img");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 240px 60px;
+    h1 {
+      font-size: 48px;
+      color: #fff;
+    }
+    p {
+      font-size: 24px;
+      color: #fff;
+      padding: 24px 0;
+    }
+    button {
+      background-color: #fff;
+      padding: 10px 24px;
+      border-radius: 20px;
+      transition: 0.2s;
+      &:hover {
+        background-color: #cccbcb;
+      }
+    }
+  }
+}

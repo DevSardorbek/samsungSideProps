@@ -1,0 +1,41 @@
+.header__section {
+  padding: 20px 0;
+  .header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .header__logo {
+      cursor: pointer;
+      h1 {
+        font-size: 30px;
+      }
+    }
+    .header__links {
+      display: flex;
+      gap: 24px;
+      margin-right: 150px;
+      p {
+        cursor: pointer;
+        padding: 4px;
+        border-radius: 12px;
+        transition: 0.2s;
+        font-size: 14px;
+        font-weight: bold;
+        &:hover {
+          background-color: black;
+          color: #fff;
+        }
+      }
+    }
+    .header__search {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      svg {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+      }
+    }
+  }
+}

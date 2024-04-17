@@ -1,0 +1,48 @@
+.banner__section {
+  .banner__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 550px;
+    padding: 24px;
+    .banner__title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      .banner__title-links {
+        display: flex;
+        gap: 32px;
+        button {
+          font-size: 18px;
+          font-weight: bold;
+          background: transparent;
+          padding: 8px 4px;
+          &:hover {
+            background-color: #d2d9e9;
+            border-radius: 16px;
+            color: #6a6767;
+          }
+        }
+      }
+    }
+    .banner__info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      p {
+        font-size: 18px;
+      }
+      button {
+        background: black;
+        color: #fff;
+        padding: 8px 14px;
+        border-radius: 14px;
+        transition: 0.3s;
+        &:hover {
+          background-color: rgb(46, 45, 45);
+        }
+      }
+    }
+  }
+}
