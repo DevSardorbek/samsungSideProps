@@ -1,8 +1,8 @@
 import React from "react";
 import "../../sass/header/__header.scss";
-import { IoSearch } from "react-icons/io5";
 import { RxAvatar } from "react-icons/rx";
 import { FiShoppingCart } from "react-icons/fi";
+import { IoSearch } from "react-icons/io5";
 
 const links = [
   "Shop",
